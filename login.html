@@ -3,52 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
+    <title>Login - Lex Company</title>
     <link rel="stylesheet" href="login.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-    rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-
-   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login">
+                <form class="login" method="post">
+                    <h2 class="login-title">Welcome Back</h2>
+                    <p class="login-subtitle">Sign in to your Lex Company account</p>
+                    
                     <div class="login__field">
-                        <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="User name / Email">
+                        <label for="username" class="field-label">Username or Email *</label>
+                        <div class="input-wrapper">
+                            <i class="login__icon fas fa-user"></i>
+                            <input type="text" id="username" name="username" class="login__input" placeholder="Enter your username or email" autocomplete="username" required>
+                        </div>
                     </div>
+                    
                     <div class="login__field">
-                        <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" placeholder="Password">
+                        <label for="password" class="field-label">Password *</label>
+                        <div class="input-wrapper">
+                            <i class="login__icon fas fa-lock"></i>
+                            <input type="password" id="password" name="password" class="login__input" placeholder="Enter your password" autocomplete="current-password" required>
+                            <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
                     </div>
-                    <button class="button login__submit">
-                        <span class="button__text">Log In Now</span>
+                    
+                    <div class="login-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember" id="remember">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="button login__submit">
+                        <span class="button__text">Sign In</span>
                         <i class="button__icon fas fa-chevron-right"></i>
-                    </button>				
-                </form>
-                <div class="social-login">
-                    <h3>log in via</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-login__icon ri-instagram-fill"></a>
-                        <a href="#" class="social-login__icon ri-facebook-fill"></a>
-                        <a href="#" class="social-login__icon ri-twitter-fill"></a>
-
+                    </button>
+                    
+                    <div class="login-footer">
+                        <p>Don't have an account? <a href="UserDetails.html" class="signup-link">Sign up here</a></p>
                     </div>
-                </div>
+                </form>
             </div>
-            <div class="screen__background">
-                <span class="screen__background__shape screen__background__shape4"></span>
-                <span class="screen__background__shape screen__background__shape3"></span>		
-                <span class="screen__background__shape screen__background__shape2"></span>
-                <span class="screen__background__shape screen__background__shape1"></span>
-            </div>		
         </div>
     </div>
 </body>
+</html>

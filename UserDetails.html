@@ -1,189 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>User details from</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	
+    <meta charset="utf-8">
+    <title>Register - Lex Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body class="form-v10">
-	<div class="page-content">
-		<div class="form-v10-content">
-			<form class="form-detail"  method="post" id="myform">
-				<div class="form-left">
-					<h2>General Infomation</h2>
-					<div class="form-row">
-						<select name="title">
-						    <option class="option" value="title">Title</option>
-						    <option class="option" value="teacher">Teacher</option>
-						    <option class="option" value="chef">Student</option>
-						    <option class="option" value="accountant">Accountant</option>
-							<option class="option" value="cashier">Shopkeeper</option>
-							<option class="option" value="doctor">Doctor</option>
-						</select>
-						<span class="select-btn">
-							<i class="fa-solid fa-caret-down"></i>
-						</span>
-					</div>
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
-						</div>
-						<div class="form-row form-row-2">
-							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
-						</div>
-					</div>
-					<div class="form-row">
-						<select name="position">
-						    <option value="position">Position</option>
-						    <option value="bookkeeper">Bookkeeper</option>
-						    <option value="receptionist">Receptionist</option>
-						    <option value="controller">Controller</option>
-							<option value="manager">Manager</option>
-						</select>
-						<span class="select-btn">
-							<i class="fa-solid fa-caret-down"></i>
-						</span>
-					</div>
-					<div class="form-row">
-						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
-					</div>
-					<div class="form-group">
-						<div class="form-row form-row-3">
-							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
-						</div>
-						<div class="form-row form-row-4">
-							<select name="employees">
-							    <option value="employees">Employees</option>
-							    <option value="intern">Intern</option>
-							    <option value="fullTime">Full-time</option>
-							    <option value="partTime">Part-time</option>
-								<option value="contract">Contract</option>
-							</select>
-							<span class="select-btn">
-								<i class="fa-solid fa-caret-down"></i>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="form-right">
-					<h2>Contact Details</h2>
-					<div class="form-row">
-						<input type="text" name="street" class="street" id="street" placeholder="Street + Nr" required>
-					</div>
-					<div class="form-row">
-						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
-					</div>
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
-						</div>
-						<div class="form-row form-row-2">
-							<select name="place">
-							    <option value="place">Place</option>
-							    <option value="kibagabaga">Kibagabaga</option>
-							    <option value="rwamagana">Rwamagana</option>
-							    <option value="musanze">Musanze</option>
-								<option value="gisozi">Gisozi</option>
-							</select>
-							<span class="select-btn">
-								<i class="fa-solid fa-caret-down"></i>
-							</span>
-						</div>
-					</div>
-					<div class="form-row">
-<select name="country">
-						   
-<option value="rwanda">Rwanda</option>
-<option value="tanzania">Tanzania</option>
-<option value="uganda">Uganda</option>
-<option value="kenya">Kenya</option>
-<option value="afghanistan">Afghanistan</option>
-<option value="albania">Albania</option>
-<option value="algeria">Algeria</option>
-<option value="argentina">Argentina</option>
-<option value="australia">Australia</option>
-<option value="bahrain">Bahrain</option>
-<option value="brazil">Brazil</option>
-<option value="canada">Canada</option>
-<option value="chile">Chile</option>
-<option value="china">China</option>
-<option value="colombia">Colombia</option>
-<option value="costa-rica">Costa Rica</option>
-<option value="denmark">Denmark</option>
-<option value="egypt">Egypt</option>
-<option value="france">France</option>
-<option value="germany">Germany</option>
-<option value="ghana">Ghana</option>
-<option value="greece">Greece</option>
-<option value="india">India</option>
-<option value="ireland">Ireland</option>
-<option value="italy">Italy</option>
-<option value="japan">Japan</option>
-<option value="jordan">Jordan</option>
-<option value="kenya">Kenya</option>
-<option value="kuwait">Kuwait</option>
-<option value="malaysia">Malaysia</option>
-<option value="mexico">Mexico</option>
-<option value="morocco">Morocco</option>
-<option value="netherlands">Netherlands</option>
-<option value="new-zealand">New Zealand</option>
-<option value="nigeria">Nigeria</option>
-<option value="norway">Norway</option>
-<option value="oman">Oman</option>
-<option value="panama">Panama</option>
-<option value="peru">Peru</option>
-<option value="philippines">Philippines</option>
-<option value="poland">Poland</option>
-<option value="portugal">Portugal</option>
-<option value="qatar">Qatar</option>
-<option value="russia">Russia</option>
-<option value="saudi-arabia">Saudi Arabia</option>
-<option value="singapore">Singapore</option>
-<option value="south-africa">South Africa</option>
-<option value="south-korea">South Korea</option>
-<option value="spain">Spain</option>
-<option value="sweden">Sweden</option>
-<option value="switzerland">Switzerland</option>
-<option value="thailand">Thailand</option>
-<option value="tunisia">Tunisia</option>
-<option value="turkey">Turkey</option>
-<option value="uae">UAE</option>
-<option value="uk">UK</option>
-<option value="usa">USA</option>
-<option value="vietnam">Vietnam</option>
-
-						</select>
-						<span class="select-btn">
-							<i class="fa-solid fa-caret-down"></i>
-						</span>
-					</div>
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
-						</div>
-						<div class="form-row form-row-2">
-							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
-						</div>
-					</div>
-					<div class="form-row">
-						<input type="text" name="your_email" id="your_email" class="input-text" placeholder="Your Email">
-					</div>
-					<div class="form-checkbox">
-						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
-						  	<input type="checkbox" name="checkbox">
-						  	<span class="checkmark"></span>
-						</label>
-					</div>
-					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Register Badge">
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+    <div class="page-content">
+        <div class="form-v10-content">
+            <form class="form-detail" method="post" id="myform">
+                <div class="form-header">
+                    <h1>Create Account</h1>
+                    <p>Join Lex Company and start your culinary journey</p>
+                </div>
+                
+                <div class="form-left">
+                    <h2>Personal Information</h2>
+                    
+                    <div class="form-row">
+                        <label for="title" class="form-label">Title *</label>
+                        <select name="title" id="title" class="input-field" required>
+                            <option value="">Select title</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                            <option value="prof">Prof.</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <label for="first_name" class="form-label">First Name *</label>
+                            <input type="text" name="first_name" id="first_name" class="input-text" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <label for="last_name" class="form-label">Last Name *</label>
+                            <input type="text" name="last_name" id="last_name" class="input-text" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="position" class="form-label">Occupation *</label>
+                        <select name="position" id="position" class="input-field" required>
+                            <option value="">Select occupation</option>
+                            <option value="student">Student</option>
+                            <option value="professional">Professional</option>
+                            <option value="business-owner">Business Owner</option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="company" class="form-label">Company/Organization</label>
+                        <input type="text" name="company" class="company" id="company" placeholder="Enter your company name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-row form-row-3">
+                            <label for="business" class="form-label">Industry *</label>
+                            <input type="text" name="business" class="business" id="business" placeholder="Enter your industry" required>
+                        </div>
+                        <div class="form-row form-row-4">
+                            <label for="employees" class="form-label">Employment Type</label>
+                            <select name="employees" id="employees" class="input-field">
+                                <option value="">Select type</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                                <option value="freelance">Freelance</option>
+                                <option value="student">Student</option>
+                                <option value="unemployed">Unemployed</option>
+                            </select>
+                            <span class="select-btn">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-right">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="form-row">
+                        <label for="street" class="form-label">Street Address *</label>
+                        <input type="text" name="street" class="street" id="street" placeholder="Enter your street address" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="additional" class="form-label">Additional Information</label>
+                        <input type="text" name="additional" class="additional" id="additional" placeholder="Apartment, suite, etc. (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <label for="zip" class="form-label">Postal Code *</label>
+                            <input type="text" name="zip" class="zip" id="zip" placeholder="Enter postal code" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <label for="place" class="form-label">City *</label>
+                            <select name="place" id="place" class="input-field" required>
+                                <option value="">Select city</option>
+                                <option value="kigali">Kigali</option>
+                                <option value="rwamagana">Rwamagana</option>
+                                <option value="musanze">Musanze</option>
+                                <option value="butare">Butare</option>
+                                <option value="gisenyi">Gisenyi</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="select-btn">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="country" class="form-label">Country *</label>
+                        <select name="country" id="country" class="input-field" required>
+                            <option value="">Select country</option>
+                            <option value="rwanda">Rwanda</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="burundi">Burundi</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="select-btn">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-row form-row-1">
+                            <label for="code" class="form-label">Country Code *</label>
+                            <input type="text" name="code" class="code" id="code" placeholder="+250" required>
+                        </div>
+                        <div class="form-row form-row-2">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" name="phone" class="phone" id="phone" placeholder="793 373 953" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="your_email" class="form-label">Email Address *</label>
+                        <input type="email" name="your_email" id="your_email" class="input-text" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <label class="container">
+                            <input type="checkbox" name="terms" id="terms" required>
+                            <span class="checkmark"></span>
+                            <p>I agree to the <a href="#" class="text">Terms and Conditions</a> and <a href="#" class="text">Privacy Policy</a> of Lex Company.</p>
+                        </label>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <label class="container">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <span class="checkmark"></span>
+                            <p>Subscribe to our newsletter for updates and special offers.</p>
+                        </label>
+                    </div>
+                    
+                    <div class="form-row-last">
+                        <button type="submit" name="register" class="register">Create Account</button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="login.html" class="login-link">Sign in here</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

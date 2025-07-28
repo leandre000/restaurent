@@ -746,68 +746,80 @@
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <div class="form-group">
+                  <label for="reservation-name" class="form-label">Full Name *</label>
+                  <input type="text" name="name" id="reservation-name" placeholder="Enter your full name" autocomplete="name" class="input-field" required>
+                </div>
 
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                <div class="form-group">
+                  <label for="reservation-phone" class="form-label">Phone Number *</label>
+                  <input type="tel" name="phone" id="reservation-phone" placeholder="+250 793 373 953" autocomplete="tel" class="input-field" required>
+                </div>
               </div>
 
               <div class="input-wrapper">
 
-                <div class="icon-wrapper">
-                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="1-person">Minister</option>
-                    <option value="2-person">Leader</option>
-                    <option value="3-person">Chef</option>
-                    <option value="4-person">Teacher</option>
-                    <option value="5-person">Doctor</option>
-                    <option value="6-person">Student</option>
-                    <option value="7-person">Lecturer</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <div class="form-group">
+                  <label for="reservation-guests" class="form-label">Number of Guests *</label>
+                  <div class="icon-wrapper">
+                    <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                    <select name="guests" id="reservation-guests" class="input-field" required>
+                      <option value="">Select guests</option>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="5">5 Guests</option>
+                      <option value="6">6+ Guests</option>
+                    </select>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
                 </div>
 
-                <div class="icon-wrapper">
-                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                  <input type="date" name="reservation-date" class="input-field">
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <div class="form-group">
+                  <label for="reservation-date" class="form-label">Reservation Date *</label>
+                  <div class="icon-wrapper">
+                    <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                    <input type="date" name="reservation-date" id="reservation-date" class="input-field" required>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
                 </div>
 
-                <div class="icon-wrapper">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="08:00am">08 : 00 am</option>
-                    <option value="09:00am">09 : 00 am</option>
-                    <option value="010:00am">10 : 00 am</option>
-                    <option value="011:00am">11 : 00 am</option>
-                    <option value="012:00am">12 : 00 am</option>
-                    <option value="01:00pm">01 : 00 pm</option>
-                    <option value="02:00pm">02 : 00 pm</option>
-                    <option value="03:00pm">03 : 00 pm</option>
-                    <option value="04:00pm">04 : 00 pm</option>
-                    <option value="05:00pm">05 : 00 pm</option>
-                    <option value="06:00pm">06 : 00 pm</option>
-                    <option value="07:00pm">07 : 00 pm</option>
-                    <option value="08:00pm">08 : 00 pm</option>
-                    <option value="09:00pm">09 : 00 pm</option>
-                    <option value="10:00pm">10 : 00 pm</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                <div class="form-group">
+                  <label for="reservation-time" class="form-label">Reservation Time *</label>
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    <select name="reservation-time" id="reservation-time" class="input-field" required>
+                      <option value="">Select time</option>
+                      <option value="08:00">08:00 AM</option>
+                      <option value="09:00">09:00 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="13:00">01:00 PM</option>
+                      <option value="14:00">02:00 PM</option>
+                      <option value="15:00">03:00 PM</option>
+                      <option value="16:00">04:00 PM</option>
+                      <option value="17:00">05:00 PM</option>
+                      <option value="18:00">06:00 PM</option>
+                      <option value="19:00">07:00 PM</option>
+                      <option value="20:00">08:00 PM</option>
+                      <option value="21:00">09:00 PM</option>
+                      <option value="22:00">10:00 PM</option>
+                    </select>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
                 </div>
 
               </div>
 
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+              <div class="form-group">
+                <label for="reservation-message" class="form-label">Special Requests</label>
+                <textarea name="message" id="reservation-message" placeholder="Any special requests or dietary requirements?" autocomplete="off" class="input-field" rows="4"></textarea>
+              </div>
 
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Book A Table</span>
-
                 <span class="text text-2" aria-hidden="true">Book A Table</span>
               </button>
 
@@ -1067,15 +1079,16 @@
           </p>
 
           <form action="" class="input-wrapper">
-            <div class="icon-wrapper">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            <div class="form-group">
+              <label for="newsletter-email" class="form-label">Email Address</label>
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <input type="email" name="email_address" id="newsletter-email" placeholder="Enter your email address" autocomplete="email" class="input-field" required>
+              </div>
             </div>
 
             <button type="submit" class="btn btn-secondary">
               <span class="text text-1">Subscribe</span>
-
               <span class="text text-2" aria-hidden="true">Subscribe</span>
             </button>
           </form>
@@ -1097,7 +1110,7 @@
           </li>
 
           <li>
-            <a href="Login.html" class="label-2 footer-link hover-underline">Login</a>
+            <a href="login.html" class="label-2 footer-link hover-underline">Login</a>
           </li>
           <li>
             <a href="UserDetails.html" class="label-2 footer-link hover-underline">Register</a>
@@ -1138,7 +1151,7 @@
       <div class="footer-bottom">
 
         <p class="copyright">
-          &copy; 2024 Lex. All Rights Reserved | Crafted by <a href="#"
+          &copy; 2024 Lex Company. All Rights Reserved | Crafted by <a href="#"
             target="_blank" class="link">Shema Leandre</a>
         </p>
 
