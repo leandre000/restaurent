@@ -2727,3 +2727,47 @@ textarea:focus {
     padding: 20px 0;
   }
 }
+
+/* Preloader fixes */
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gold-crayola);
+  z-index: 9999;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  transition: var(--transition-2);
+}
+
+.preload > * { transition: var(--transition-1); }
+
+.preload.loaded > * { opacity: 0; }
+
+.preload.loaded {
+  transition-delay: 250ms;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+/* Ensure body overflow is managed */
+body {
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5);
+  color: var(--white);
+  background-color: var(--eerie-black-1);
+  overflow-x: hidden;
+}
+
+body.loaded { 
+  overflow: auto; 
+}
+
+body.nav-active { 
+  overflow: hidden; 
+}
