@@ -168,21 +168,3 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
-
-// Fade-in on scroll for cards and images
-function fadeInOnScroll() {
-  const elements = document.querySelectorAll('.menu-card, .service-card, .feature-card, .img-cover');
-  const observer = new window.IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in-up');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  elements.forEach(el => {
-    observer.observe(el);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', fadeInOnScroll);
