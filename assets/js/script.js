@@ -1,54 +1,5 @@
 'use strict';
 
-
-
-/**
- * PRELOAD
- * 
- * loading will be end after document is loaded
- */
-
-const preloader = document.querySelector("[data-preaload]");
-
-// Skip preloader function
-function skipPreloader() {
-  const preloader = document.querySelector("[data-preaload]");
-  if (preloader) {
-    preloader.classList.add("loaded");
-    document.body.classList.add("loaded");
-  }
-}
-
-// Primary load event
-window.addEventListener("load", function () {
-  if (preloader) {
-    preloader.classList.add("loaded");
-    document.body.classList.add("loaded");
-  }
-});
-
-// Fallback: Force remove preloader after 5 seconds if it doesn't disappear
-setTimeout(function() {
-  if (preloader && !preloader.classList.contains("loaded")) {
-    console.log("Preloader fallback triggered");
-    preloader.classList.add("loaded");
-    document.body.classList.add("loaded");
-  }
-}, 5000);
-
-// Additional fallback: Remove preloader on DOMContentLoaded if window.load doesn't fire
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-    if (preloader && !preloader.classList.contains("loaded")) {
-      console.log("Preloader DOMContentLoaded fallback triggered");
-      preloader.classList.add("loaded");
-      document.body.classList.add("loaded");
-    }
-  }, 3000);
-});
-
-
-
 /**
  * add event listener on multiple elements
  */
