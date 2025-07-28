@@ -2138,3 +2138,34 @@ textarea.input-field {
   }
 
 }
+
+/* Modern image and card styles */
+.img-cover, .card-banner img, .menu-card img, .service-card img, .feature-card img {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,61,47,0.10);
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), box-shadow 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.7s;
+}
+.menu-card, .service-card, .feature-card {
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(26,61,47,0.07);
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+.menu-card:hover, .service-card:hover, .feature-card:hover {
+  box-shadow: 0 8px 32px rgba(26,61,47,0.18);
+  transform: translateY(-6px) scale(1.03);
+}
+.menu-card:hover .img-cover, .service-card:hover .img-cover, .feature-card:hover .img-cover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px rgba(212,175,55,0.13);
+}
+/* Fade-in animation on scroll */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+/* Utility: add fade-in-up to cards/images via JS or HTML for reveal effect */
