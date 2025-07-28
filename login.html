@@ -3,52 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
+    <title>Login - Lex Company</title>
     <link rel="stylesheet" href="login.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-    rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-
-   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
     <div class="container">
         <div class="screen">
             <div class="screen__content">
-                <form class="login">
+                <form class="login" aria-label="Login form">
                     <div class="login__field">
-                        <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="User name / Email">
+                        <label for="login-username" class="visually-hidden">Username or Email</label>
+                        <i class="login__icon fas fa-user" aria-hidden="true"></i>
+                        <input id="login-username" type="text" class="login__input" placeholder="Username or Email" required autocomplete="username">
                     </div>
                     <div class="login__field">
-                        <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" placeholder="Password">
+                        <label for="login-password" class="visually-hidden">Password</label>
+                        <i class="login__icon fas fa-lock" aria-hidden="true"></i>
+                        <input id="login-password" type="password" class="login__input" placeholder="Password" required autocomplete="current-password">
                     </div>
-                    <button class="button login__submit">
-                        <span class="button__text">Log In Now</span>
-                        <i class="button__icon fas fa-chevron-right"></i>
-                    </button>				
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">Log In</span>
+                        <i class="button__icon fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
                 </form>
                 <div class="social-login">
-                    <h3>log in via</h3>
+                    <h3>Log in via</h3>
                     <div class="social-icons">
-                        <a href="#" class="social-login__icon ri-instagram-fill"></a>
-                        <a href="#" class="social-login__icon ri-facebook-fill"></a>
-                        <a href="#" class="social-login__icon ri-twitter-fill"></a>
-
+                        <a href="#" class="social-login__icon ri-instagram-fill" aria-label="Login with Instagram"></a>
+                        <a href="#" class="social-login__icon ri-facebook-fill" aria-label="Login with Facebook"></a>
+                        <a href="#" class="social-login__icon ri-twitter-fill" aria-label="Login with Twitter"></a>
                     </div>
                 </div>
             </div>
-            <div class="screen__background">
-                <span class="screen__background__shape screen__background__shape4"></span>
-                <span class="screen__background__shape screen__background__shape3"></span>		
-                <span class="screen__background__shape screen__background__shape2"></span>
-                <span class="screen__background__shape screen__background__shape1"></span>
-            </div>		
         </div>
     </div>
+    <style>
+    .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+    </style>
 </body>
+</html>
