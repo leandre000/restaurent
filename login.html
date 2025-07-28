@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="container">
+        <a href="index.html" class="home-icon" aria-label="Back to Home"><i class="fas fa-home"></i></a>
         <div class="screen">
             <div class="screen__content">
                 <form class="login" aria-label="Login form">
@@ -41,6 +42,38 @@
     </div>
     <style>
     .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+    .home-icon {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      font-size: 2.2rem;
+      color: #1A3D2F;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(26,61,47,0.10);
+      padding: 0.4em 0.5em;
+      z-index: 10;
+      transition: background 0.2s, color 0.2s;
+    }
+    .home-icon:hover, .home-icon:focus {
+      background: #D4AF37;
+      color: #fff;
+    }
+    body, .login, .login__input, .login__submit {
+      font-family: 'DM Sans', 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif !important;
+    }
+    .login__submit {
+      background: #1A3D2F;
+      color: #fff;
+      border-radius: 16px;
+      font-size: 1.15em;
+      font-weight: 700;
+      transition: background 0.2s, color 0.2s;
+    }
+    .login__submit:hover, .login__submit:focus {
+      background: #D4AF37;
+      color: #1A3D2F;
+    }
     </style>
 </body>
 </html>
